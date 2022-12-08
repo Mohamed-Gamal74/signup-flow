@@ -10,7 +10,6 @@ const homeContent = document.getElementById("home__content");
 // adding event listener to form
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(e)
     checkInputs();
   });
   
@@ -80,7 +79,8 @@ form.addEventListener("submit", (e) => {
   
   // function to valid username
   function isValidUsername(username) {
-    const regex = /^[a-zA-Z\-]+$/;
+    // const regex = /^[a-zA-Z\-]+$/;
+    const regex = /^[a-zA-Z\-]{5,15}$/; 
     return regex.test(username);
   }
   

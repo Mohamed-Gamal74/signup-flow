@@ -191,7 +191,7 @@ a {
 /* =========== start responsive =============  */
 @media screen and (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .container {
@@ -204,6 +204,7 @@ a {
     padding: 40px 0;
     background-color: transparent;
     height: 100%;
+    overflow-x: hidden;
   }
 
   .btn {
@@ -227,7 +228,11 @@ a {
 
   .input__container {
     width: 315px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 20px auto;
+  }
+
+  .error {
+    top: -20%;
   }
 
   #home .image__container {
