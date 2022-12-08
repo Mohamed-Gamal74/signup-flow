@@ -79,7 +79,6 @@ form.addEventListener("submit", (e) => {
   
   // function to valid username
   function isValidUsername(username) {
-    // const regex = /^[a-zA-Z\-]+$/;
     const regex = /^[a-zA-Z\-]{5,15}$/; 
     return regex.test(username);
   }
@@ -103,6 +102,7 @@ form.addEventListener("submit", (e) => {
         username: username.value,
         email: email.value,
         password: password.value,
+        confirmPassword: confirmPassword.value,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
